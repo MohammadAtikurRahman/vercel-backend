@@ -11,7 +11,7 @@ const csv = require("csv-parser");
 
 let dataArray = [];
 
-fs.createReadStream("idiya.csv")
+fs.createReadStream("./idiya.csv")
   .pipe(csv())
   .on("data", (data) => {
     dataArray.push(data);
